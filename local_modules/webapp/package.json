@@ -45,7 +45,7 @@
     "postcss-loader": "^1.2.2",
     "postcss-smart-import": "^0.6.7",
     "precss": "^1.4.0",
-    "style-loader": "^0.13.1"
-    "testdouble": "^1.11.1",
+    "style-loader": "^0.13.1",
+    "testdouble": "^1.11.1"
   }
 }
