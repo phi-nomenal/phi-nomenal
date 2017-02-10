@@ -7,6 +7,7 @@ contract RFQRegistry {
     function register(RFQ rfq) {
         openRFQs.push(rfq);
     }
+    
     function amountOfOpenRFQs() constant returns (uint) {
         return openRFQs.length;
     }
