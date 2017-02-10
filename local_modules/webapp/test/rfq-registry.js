@@ -1,5 +1,4 @@
 /* eslint-env mocha */
-import contract from 'truffle-contract'
 import rfqRegistryModel from '../app/model/RfqRegistryModel'
 import { RFQ, RFQRegistry } from '../app/model/Contracts'
 
@@ -12,7 +11,7 @@ describe('RFQ Registry', function () {
     expect(await rfqRegistryModel.openRFQs()).to.eql([])
   })
 
-  context('when there are two RFQs in the registry', function() {
+  context('when there are two RFQs in the registry', function () {
     let address1 = '0x1'
     let address2 = '0x2'
     let product1 = 'product 1'
@@ -22,7 +21,7 @@ describe('RFQ Registry', function () {
     let amount2 = 2
     let region2 = 'region 2'
 
-    beforeEach(function() {
+    beforeEach(function () {
       const registryMock = td.object(RFQRegistry)
       const rfq1 = td.object(RFQ)
       const rfq2 = td.object(RFQ)
@@ -43,11 +42,11 @@ describe('RFQ Registry', function () {
       td.when(rfq2.deliveryRegion()).thenReturn(Promise.resolve(region2))
     })
 
-    afterEach(function() {
+    afterEach(function () {
       td.reset()
     })
 
-    it('returns an array with two elements', async function() {
+    it('returns an array with two elements', async function () {
       let expected = [
         { product: product1, amount: amount1, deliveryRegion: region1 },
         { product: product2, amount: amount2, deliveryRegion: region2 }
