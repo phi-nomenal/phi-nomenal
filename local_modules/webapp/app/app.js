@@ -9,7 +9,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: React.PropTypes.array.isRequired
+  children: React.PropTypes.object.isRequired
 }
 
 export default App
