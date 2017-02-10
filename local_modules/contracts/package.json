@@ -1,9 +1,9 @@
 {
-  "name": "phi-nominal-contracts",
+  "name": "phi-nomenal-contracts",
   "version": "0.1.0",
-  "description": "Phi-Nominal contracts",
+  "description": "Phi-Nomenal contracts",
   "main": "index.js",
-  "repository": "https://github.com/phi-nominal/phi-nominal",
+  "repository": "https://github.com/phi-nomenal/phi-nomenal",
   "contributors": [
     "Stefan van den Oord",
     "Mark Spanbroek",

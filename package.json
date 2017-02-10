@@ -1,9 +1,9 @@
 {
-  "name": "phi-nominal",
+  "name": "phi-nomenal",
   "version": "0.1.0",
   "description": "Blockchain for Supply Chain",
   "main": "index.js",
-  "repository": "https://github.com/phi-nominal/phi-nominal",
+  "repository": "https://github.com/phi-nomenal/phi-nomenal",
   "contributors": [
     "Stefan van den Oord",
     "Mark Spanbroek",
