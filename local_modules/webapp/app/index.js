@@ -1,15 +1,18 @@
-import './index.css'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router'
 
-import contract from 'truffle-contract'
-import metacoinJson from 'contracts/build/contracts/MetaCoin.json'
-const MetaCoin = contract(metacoinJson)
-
-MetaCoin.deployed()
+import Home from './home'
+import App from './app'
+import Consumer from './consumer/consumer'
+import God from './god/god'
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
-)
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="/consumer" component={Consumer} />
+      <Route path="/god" component={God} />
+    </Route>
+  </Router>
+, document.getElementById('root'))

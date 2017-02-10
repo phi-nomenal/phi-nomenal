@@ -25,6 +25,7 @@
     "on-build-webpack": "^0.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-router": "^3.0.2",
     "replace": "^0.3.0",
     "truffle-contract": "^1.1.9",
     "webpack-dev-server": "^2.3.0"
