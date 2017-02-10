@@ -1,5 +1,7 @@
-module.exports = {
-  openRFQs: function() {
+class RfqRegistry {
+  openRFQs() {
     return []
   }
 }
+
+export default new RfqRegistry()

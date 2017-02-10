@@ -1,6 +1,6 @@
 /* eslint-env mocha */
-const expect = require('chai').expect
-const rfqRegistry = require('../app/model/RfqRegistry')
+import { expect } from 'chai'
+import rfqRegistry from '../app/model/RfqRegistry'
 
 describe('RFQ Registry', function () {
   it('is empty', function () {
