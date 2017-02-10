@@ -9,10 +9,10 @@ import God from './god/god'
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/" component={App}>
+    <Route path='/' component={App}>
       <IndexRoute component={Home} />
-      <Route path="/consumer" component={Consumer} />
-      <Route path="/god" component={God} />
+      <Route path='/consumer' component={Consumer} />
+      <Route path='/god' component={God} />
     </Route>
   </Router>
 , document.getElementById('root'))

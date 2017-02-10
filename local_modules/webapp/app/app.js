@@ -3,9 +3,13 @@ import { render } from 'react-dom'
 import './app.css'
 
 class App extends React.Component {
-  render() {
+  render () {
     return <div>{this.props.children}</div>
   }
+}
+
+App.propTypes = {
+  children: React.propTypes.array.isRequired
 }
 
 export default App

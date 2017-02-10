@@ -1,5 +1,5 @@
 class RfqRegistry {
-  openRFQs() {
+  openRFQs () {
     return []
   }
 }
