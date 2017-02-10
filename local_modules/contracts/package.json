@@ -1,9 +1,9 @@
 {
-  "name": "truffle-devenv-contracts",
+  "name": "phi-nominal-contracts",
   "version": "0.1.0",
-  "description": "Example contracts",
+  "description": "Phi-Nominal contracts",
   "main": "index.js",
-  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
+  "repository": "https://github.com/phi-nominal/phi-nominal",
   "contributors": [
     "Stefan van den Oord",
     "Mark Spanbroek"
