@@ -40,6 +40,7 @@ This tradehub is a platform based on the public blockchain which has the intend 
 
 The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (green-ness of total delvery of product) will add an additional dimension to value. The provenance that blockchain will enable will track the ability to meet the specific requirements.
 
+![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Consumer%20Centric.png)
 
 
 
