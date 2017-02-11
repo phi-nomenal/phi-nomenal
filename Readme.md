@@ -7,13 +7,15 @@
 ========================================
 Welcome to the Supply & Blockchain platform built at the _DBH17_!! 
 
-This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal
+This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal. This platform uses Ethereum, smart contracts written in Solidity.
 
 ##### 1.Introduction
 ##### 2.What is the current problem
 ##### 3.Goal
 ##### 4.The Tradehub
 ##### 5.FAQ
+
+##### Introduction
 
 The creation of a platform which facilitates/enables the coming together of buyers and sellers of goods and services. A place where a need/ request can be served in many different ways by many different parties. The Trade Hub.
 Moving goods effortlessly through the supply chain with multiple partners driven by geographical customer demand. Traditional logistic partners will remain, however through flash companies, create access for smaller parties to participate. Quick registration of a peer node in the blockchain as a trading partner makes this possible.
@@ -33,7 +35,9 @@ This is where (public) blockchain will make a profound impact, and will create i
 
 ##### The Front end application
 
-We have developed a web based application to be 
+We have developed a web based application considered the interface for consumers. This application, cunningly called: _The Green Slider_, will provide the possiblity for the consumer to control (by the slider) his or hers allowed CO2 emission for the delievry of the product. This requirement, together with the initial request for the product, will be offered to the trade partners by means of Request for Quotations.
+
+These RFQ's will be replied to by the trade partners, offering an actual supply of product and CO2 atribute to the consumer. The logic behind this offering includes proximity to the consumer, considering the required an allowed amount of CO2 and lead-time. 
 
 
 ##### Tradehub
@@ -51,12 +55,12 @@ By this in essence a consumer centric ecosystem is created.
 
 ##### _Q: Why can't what you describe be done with current systems / technology?_
 
-A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction thsi is achieved by the fact that risk (safety stocks) now can also be distributed among the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to underatke big effort in setting up connections takes away a steep hurdle from the get go.
+A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction this is achieved by the fact that risk (safety stocks) now can also be distributed amongst the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to underatke big effort in setting up connections takes away a steep hurdle from the get go.
 
-##### _Q: When will blockchain as per above be a reality?
+##### _Q: When will blockchain as per above be a reality?_
 
-A: 
+A: This revolutionary technology is a journey of development which will become stronger the more it is fed-finding new applications for the blockchain. We start today!!!! "Even a long journey starts with 1 step!!!"
 
+##### _Q: What about privacy?_
 
-
-
+A: What about it? Please be specific in your questions?
