@@ -5,11 +5,17 @@ import RFQRegistryJSON from 'phi-nomenal-contracts/build/contracts/RFQRegistry.j
 import RFQJSON from 'phi-nomenal-contracts/build/contracts/RFQ.json'
 import MatchingEngineJSON from 'phi-nomenal-contracts/build/contracts/MatchingEngine.json'
 import QuotationJSON from 'phi-nomenal-contracts/build/contracts/Quotation.json'
+import LocationJSON from 'phi-nomenal-contracts/build/contracts/Location.json'
+import OrderHistoryLegJSON from 'phi-nomenal-contracts/build/contracts/OrderHistoryLeg.json'
+import OrderHistoryJSON from 'phi-nomenal-contracts/build/contracts/OrderHistory.json'
 
 const RFQRegistry = contract(RFQRegistryJSON)
 const RFQ = contract(RFQJSON)
 const MatchingEngine = contract(MatchingEngineJSON)
 const Quotation = contract(QuotationJSON)
+const Location = contract(LocationJSON)
+const OrderHistoryLeg = contract(OrderHistoryLegJSON)
+const OrderHistory = contract(OrderHistoryJSON)
 
 const web3Location = 'http://localhost:8545'
 var web3Provided
@@ -26,7 +32,15 @@ RFQRegistry.setProvider(web3Provided.currentProvider)
 RFQ.setProvider(web3Provided.currentProvider)
 MatchingEngine.setProvider(web3Provided.currentProvider)
 Quotation.setProvider(web3Provided.currentProvider)
+Location.setProvider(web3Provided.currentProvider)
+OrderHistoryLeg.setProvider(web3Provided.currentProvider)
+OrderHistory.setProvider(web3Provided.currentProvider)
 
 const accounts = web3Provided.eth.accounts
 
-export { RFQ, RFQRegistry, MatchingEngine, Quotation, accounts }
+export {
+  RFQ, RFQRegistry,
+  MatchingEngine,
+  Quotation,
+  Location, OrderHistoryLeg, OrderHistory,
+  accounts }
