@@ -3,8 +3,13 @@ import { RFQ, RFQRegistry } from './Contracts'
 class RfqRegistryModel {
   deployedContract
 
-  constructor () {
-    this.deployedContract = RFQRegistry.deployed()
+  static async create () {
+    let registry = await RFQRegistry.deployed()
+    return new RfqRegistryModel(registry)
+  }
+
+  constructor (deployedContract) {
+    this.deployedContract = deployedContract
   }
 
   async openRFQs () {
@@ -17,6 +22,7 @@ class RfqRegistryModel {
       let amount = await rfq.amount()
       let region = await rfq.deliveryRegion()
       result.push({
+        id: rfqAddress,
         product: product,
         amount: amount,
         deliveryRegion: region
@@ -26,4 +32,4 @@ class RfqRegistryModel {
   }
 }
 
-export default new RfqRegistryModel()
+export default RfqRegistryModel

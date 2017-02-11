@@ -1,13 +1,20 @@
 /* eslint-env mocha */
-import rfqRegistryModel from '../app/model/RfqRegistryModel'
+import RfqRegistryModel from '../app/model/RfqRegistryModel'
 import { RFQ, RFQRegistry } from '../app/model/Contracts'
 
 import { expect } from 'chai'
 import td from 'testdouble'
 
 describe('RFQ Registry', function () {
+  let rfqRegistryModel
+  let registryMock
+
+  beforeEach(async function () {
+    registryMock = td.object(RFQRegistry)
+    rfqRegistryModel = new RfqRegistryModel(registryMock)
+  })
+
   it('is empty', async function () {
-    rfqRegistryModel.deployedContract = td.object(RFQRegistry)
     expect(await rfqRegistryModel.openRFQs()).to.eql([])
   })
 
@@ -22,10 +29,8 @@ describe('RFQ Registry', function () {
     let region2 = 'region 2'
 
     beforeEach(function () {
-      const registryMock = td.object(RFQRegistry)
       const rfq1 = td.object(RFQ)
       const rfq2 = td.object(RFQ)
-      rfqRegistryModel.deployedContract = registryMock
 
       td.replace(RFQ, 'at')
       td.when(RFQ.at(address1)).thenReturn(rfq1)
@@ -48,8 +53,18 @@ describe('RFQ Registry', function () {
 
     it('returns an array with two elements', async function () {
       let expected = [
-        { product: product1, amount: amount1, deliveryRegion: region1 },
-        { product: product2, amount: amount2, deliveryRegion: region2 }
+        {
+          id: address1,
+          product: product1,
+          amount: amount1,
+          deliveryRegion: region1
+        },
+        {
+          id: address2,
+          product: product2,
+          amount: amount2,
+          deliveryRegion: region2
+        }
       ]
       expect(await rfqRegistryModel.openRFQs()).to.eql(expected)
     })
