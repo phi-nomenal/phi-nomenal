@@ -15,8 +15,6 @@ This platform which will show the value of using the _public blockhain_ on our _
 ##### 4.The Tradehub
 ##### 5.FAQ
 
-##### Introduction.
-
 The creation of a platform which facilitates/enables the coming together of buyers and sellers of goods and services. A place where a need/ request can be served in many different ways by many different parties. The Trade Hub.
 Moving goods effortlessly through the supply chain with multiple partners driven by geographical customer demand. Traditional logistic partners will remain, however through flash companies, create access for smaller parties to participate. Quick registration of a peer node in the blockchain as a trading partner makes this possible.
 Full inventory tracking- detailing attributes of value (such as carbon emissions, origin etc) available and transparent. Real-time inventory tracking showing inventory balances per location and in transit, coupled with customer demand- creates the opportunity for peer logistic providers to indicate an interest to transact/ move goods around.
@@ -33,6 +31,11 @@ The current supply chain is a sequence of processes and transaction which limits
 
 This is where (public) blockchain will make a profound impact, and will create infrastructural transparency by default.
 
+##### The Front end application
+
+We have developed a web based application to be 
+
+
 ##### Tradehub
 
 The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent. 
@@ -46,12 +49,14 @@ By this in essence a consumer centric ecosystem is created.
 
 ##### FAQ
 
-##### _Q: Why can't what you describe not be done with current systems / technology?_
+##### _Q: Why can't what you describe be done with current systems / technology?_
 
 A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction thsi is achieved by the fact that risk (safety stocks) now can also be distributed among the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to underatke big effort in setting up connections takes away a steep hurdle from the get go.
 
-##### _Q: Why do your toothbrushes suck?_ Rgds, Anja
+##### _Q: When will blockchain as per above be a reality?
 
-A: (*&^@)$!!!
+A: 
+
+
 
 
