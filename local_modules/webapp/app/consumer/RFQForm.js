@@ -40,15 +40,15 @@ class RFQForm extends React.Component {
     return <form onSubmit={this.handleSubmit}>
       <div className='formElem'>
         <label>Product:</label>
-          <input type='text' value={this.state.product} onChange={this.handleProductChange} />
+        <input type='text' value={this.state.product} onChange={this.handleProductChange} />
       </div>
       <div className='formElem'>
         <label>Amount:</label>
-          <input type='text' value={this.state.amount} onChange={this.handleAmountChange} />
+        <input type='text' value={this.state.amount} onChange={this.handleAmountChange} />
       </div>
       <div className='formElem'>
         <label>Delivery region:</label>
-          <input type='text' value={this.state.deliveryRegion} onChange={this.handleDeliveryRegionChange} />
+        <input type='text' value={this.state.deliveryRegion} onChange={this.handleDeliveryRegionChange} />
       </div>
       <div className='formElem'>
         <label>&nbsp;</label>
