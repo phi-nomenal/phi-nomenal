@@ -4,7 +4,7 @@ import './OrderHistoryLeg.sol';
 import './Location.sol';
 
 contract OrderHistory {
-    OrderHistoryLeg[] legs;
+    OrderHistoryLeg[] public legs;
 
     function amountOfLegs() constant returns (uint) {
         return legs.length;

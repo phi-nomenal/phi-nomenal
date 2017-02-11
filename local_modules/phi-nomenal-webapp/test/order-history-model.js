@@ -51,7 +51,7 @@ describe('OrderHistoryModel', function () {
       td.when(leg.to()).thenReturn(Promise.resolve(to.address))
 
       td.when(orderHistoryMock.amountOfLegs()).thenReturn(Promise.resolve(1))
-      td.when(orderHistoryMock.getLeg(0)).thenReturn(Promise.resolve(leg.address))
+      td.when(orderHistoryMock.legs(0)).thenReturn(Promise.resolve(leg.address))
     })
 
     afterEach(function () {
@@ -61,6 +61,7 @@ describe('OrderHistoryModel', function () {
     it('retrieves legs from the order history', async function () {
       let expected = [
         {
+          id: leg.address,
           mode: mode,
           distance: distance,
           co2emission: co2emission,

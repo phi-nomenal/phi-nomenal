@@ -1,10 +1,11 @@
-import { OrderHistory, OrderHistoryLeg, Location } from './Contracts'
+import { OrderHistory, OrderHistoryLeg, Location, accounts } from './Contracts'
 
 export default class OrderHistoryModel {
   orderHistory
 
   static async create () {
-    let history = await OrderHistory.deployed()
+    let history = await OrderHistory.new({from: accounts[0], gas: 4000000})
+    await history.addDemoData({from: accounts[0], gas: 4000000})
     return new OrderHistoryModel(history)
   }
 
@@ -16,11 +17,12 @@ export default class OrderHistoryModel {
     let result = []
     let amount = await this.orderHistory.amountOfLegs()
     for (let i = 0; i < amount; i++) {
-      let legAddress = await this.orderHistory.getLeg(i)
+      let legAddress = await this.orderHistory.legs(i)
       let leg = OrderHistoryLeg.at(legAddress)
       let from = Location.at(await leg.from())
       let to = Location.at(await leg.to())
       result.push({
+        id: leg.address,
         mode: (await leg.mode()).toNumber(),
         distance: (await leg.distance()).toNumber(),
         co2emission: (await leg.co2emission()).toNumber(),

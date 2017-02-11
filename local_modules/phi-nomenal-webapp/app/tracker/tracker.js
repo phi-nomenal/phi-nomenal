@@ -1,11 +1,13 @@
 import React from 'react'
 import './tracker.css'
 import OrderNumberForm from './OrderNumberForm'
+import OrderHistoryModel from '../model/OrderHistoryModel'
 
 class Tracker extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { step: '' }
+    this.state = { step: '', legs: [] }
+    this.renderLeg = this.renderLeg.bind(this)
   }
 
   render () {
@@ -23,10 +25,17 @@ class Tracker extends React.Component {
   renderSearchForm () {
     let onOrderNumberEntered = function () {
       this.setState({ step: 'show-tracking-info' })
+      this.loadOrderHistory()
     }.bind(this)
     return <div><h1>Order Tracking</h1>
       <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
     </div>
+  }
+
+  async loadOrderHistory () {
+    let model = await OrderHistoryModel.create()
+    let legs = await model.getLegs()
+    this.setState({legs: legs})
   }
 
   renderTrackingInfo () {
@@ -35,12 +44,18 @@ class Tracker extends React.Component {
         <tr><td>Description</td><td>Transportation</td><td className='numeric'>CO<sub>2</sub> Emission</td></tr>
       </thead>
       <tbody>
-        <tr><td>From factory to warehouse</td><td>airplane</td><td className='numeric'>34</td></tr>
-        <tr><td>From warehouse to retailer</td><td>truck</td><td className='numeric'>72</td></tr>
-        <tr><td>From retailer to destination</td><td>bike</td><td className='numeric'>3</td></tr>
+        { this.state.legs.map(this.renderLeg) }
         <tr><td /><td /><td className='totals numeric'><strong>109</strong></td></tr>
       </tbody>
     </table>
+  }
+
+  renderLeg (leg) {
+    return <tr key={leg.id}>
+      <td>From {leg.from.geolocation} to {leg.to.geolocation}</td>
+      <td>{leg.mode}</td>
+      <td className='numeric'>{leg.co2emission}</td>
+    </tr>
   }
 }
 
