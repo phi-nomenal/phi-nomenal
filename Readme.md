@@ -2,13 +2,13 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/phi-nomenal/phi-nomenal)](https://bettercodehub.com)
 
 ![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Phinomenal.png)
- 
-# Blockchain for Supply Chain
+
+#Blockchain for Supply Chain
 ========================================
 Welcome to the Supply & Blockchain platform built at the _DBH17_!! 
 
 This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal
-![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Phinomenal.png)
+
 ##### 1.Introduction
 ##### 2.The principle
 ##### 3.Goal
