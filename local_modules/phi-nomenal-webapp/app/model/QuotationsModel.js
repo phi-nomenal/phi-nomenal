@@ -20,7 +20,7 @@ export default class QuotationsModel {
       let quotationAddress = await this.matchingEngine.getQuotation(rfq.address, i)
       let quotation = Quotation.at(quotationAddress)
       result.push({
-        greenness: await quotation.greenness(),
+        greenness: (await quotation.greenness()).toNumber(),
         deliveryDate: await quotation.deliveryDate()
       })
     }

@@ -25,6 +25,15 @@
   width: 215px;
 }
 
+#delivery-date {
+  position: relative;
+  left: 410px;
+  top: 310px;
+  width: 215px;
+  text-align: center;
+  color: white;
+}
+
 #consumer-ui {
   width: 100%;
   height: 100%;

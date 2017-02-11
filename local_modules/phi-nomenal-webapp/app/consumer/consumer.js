@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import RFQForm from './RFQForm'
 import QuotationsModel from '../model/QuotationsModel'
+import QuotationSelector from '../model/QuotationSelector'
 import './consumer.css'
 
 class Consumer extends React.Component {
@@ -9,6 +10,7 @@ class Consumer extends React.Component {
     super()
     this.state = { step: 'choose-product' }
     this.onProductChosen = this.onProductChosen.bind(this)
+    this.onSliderChanged = this.onSliderChanged.bind(this)
   }
 
   onProductChosen (rfq) {
@@ -20,6 +22,10 @@ class Consumer extends React.Component {
     let quotationsModel = await QuotationsModel.create()
     let quotations = await quotationsModel.getQuotations(rfq)
     this.setState({ quotations: quotations })
+  }
+
+  onSliderChanged (event) {
+    this.setState({ greenness: event.target.value })
   }
 
   render () {
@@ -43,9 +49,22 @@ class Consumer extends React.Component {
   }
 
   renderChooseShipment () {
+    let deliveryDate = this.getSelectedQuotation().deliveryDate
     return <div id='consumer-choose-shipment' className='consumer-choose'>
-      <input id='slider' type='range' />
+      <input id='slider' type='range' min='0' max='100' onChange={this.onSliderChanged} />
+      <div id='delivery-date'>{ deliveryDate }</div>
     </div>
+  }
+
+  getSelectedQuotation () {
+    let selector = new QuotationSelector(this.state.quotations)
+    let greenness = this.state.greenness
+    if (!greenness) { greenness = 50 }
+    let quotation = selector.selectGreenness(greenness)
+    if (!quotation) {
+      quotation = { greenness: 0, deliveryDate: '' }
+    }
+    return quotation
   }
 }
 

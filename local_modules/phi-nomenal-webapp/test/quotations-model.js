@@ -3,6 +3,7 @@ import QuotationsModel from '../app/model/QuotationsModel'
 import { MatchingEngine, RFQ, Quotation } from '../app/model/Contracts'
 import { expect } from 'chai'
 import td from 'testdouble'
+import BigNumber from 'bignumber.js'
 
 describe('QuotationsModel', function () {
   let quotationsModel
@@ -28,7 +29,7 @@ describe('QuotationsModel', function () {
       quotation = td.object(Quotation)
       td.replace(Quotation, 'at')
       td.when(Quotation.at(quotation.address)).thenReturn(quotation)
-      td.when(quotation.greenness()).thenReturn(Promise.resolve(greenness))
+      td.when(quotation.greenness()).thenReturn(Promise.resolve(new BigNumber(greenness)))
       td.when(quotation.deliveryDate()).thenReturn(Promise.resolve(deliveryDate))
 
       td.when(matchingEngineMock.getAmountOfQuotations(rfq.address))
