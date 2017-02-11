@@ -18,13 +18,20 @@ class RFQForm extends React.Component {
   }
 
   async handleSubmit (event) {
+    event.preventDefault()
     let rfq = await RFQ.new(
       this.state.product,
       this.state.amount,
       this.state.deliveryRegion, {from: accounts[0], gas: 400000})
     let registry = await RFQRegistry.deployed()
     await registry.register(rfq.address, {from: accounts[0]})
-    event.preventDefault()
+    this.notifyCallback()
+  }
+
+  notifyCallback () {
+    if (this.props.onRequestRegistered) {
+      this.props.onRequestRegistered()
+    }
   }
 
   render () {
@@ -47,6 +54,10 @@ class RFQForm extends React.Component {
       </div>
     </form>
   }
+}
+
+RFQForm.propTypes = {
+  onRequestRegistered: React.PropTypes.func
 }
 
 export default RFQForm
