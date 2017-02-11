@@ -6,19 +6,19 @@ Welcome to the Supply & Blockchain platform built at the _DBH17_!!
 
 This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal
 
-#### 1.Introduction
-#### 2.The principle
-##### Trade hub
-##### Provenance
-##### Supply Chain
-#### Goal
-#### The Platform
-##### Front-end
-##### Back-end
-##### God-mode
-##### FAQ
+##### 1.Introduction
+##### 2.The principle
+###### i.Trade hub
+###### ii.Provenance
+###### iii.Supply Chain
+##### 3.Goal
+##### 4.The Platform
+###### i. Front-end
+###### ii.Back-end
+###### iii.God-mode
+##### 5.FAQ
 
-#### Introduction.
+##### Introduction.
 
 The creation of a platform which facilitates/enables the coming together of buyers and sellers of goods and services. A place where a need/ request can be served in many different ways by many different parties. The Trade Hub.
 Moving goods effortlessly through the supply chain with multiple partners driven by geographical customer demand. Traditional logistic partners will remain, however through flash companies, create access for smaller parties to participate. Quick registration of a peer node in the blockchain as a trading partner makes this possible.
