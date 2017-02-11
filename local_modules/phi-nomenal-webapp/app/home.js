@@ -10,6 +10,7 @@ class Home extends React.Component {
       <ul>
         <li><Link to='/god'>God</Link></li>
         <li><Link to='/consumer'>Consumer</Link></li>
+        <li><Link to='/tracking'>Order Tracking</Link></li>
       </ul>
     </div>
   }
