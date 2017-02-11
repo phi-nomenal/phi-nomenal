@@ -5,7 +5,7 @@
 
 #Blockchain for Supply Chain
 ========================================
-Welcome to the Supply & Blockchain platform built at the _DBH17_!! 
+Welcome to the Supply & Blockchain platform built at the _DBH17_!!
 
 This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal. This platform uses Ethereum, smart contracts written in Solidity.
 
@@ -37,12 +37,12 @@ This is where (public) blockchain will make a profound impact, and will create i
 
 We have developed a web based application considered the interface for consumers. This application, cunningly called: _The Green Slider_, will provide the possiblity for the consumer to control (by the slider) his or hers allowed CO2 emission for the delievry of the product. This requirement, together with the initial request for the product, will be offered to the trade partners by means of Request for Quotations.
 
-These RFQ's will be replied to by the trade partners, offering an actual supply of product and CO2 atribute to the consumer. The logic behind this offering includes proximity to the consumer, considering the required an allowed amount of CO2 and lead-time. 
+These RFQ's will be replied to by the trade partners, offering an actual supply of product and CO2 atribute to the consumer. The logic behind this offering includes proximity to the consumer, considering the required an allowed amount of CO2 and lead-time.
 
 
 ##### Tradehub
 
-The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent. 
+The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent.
 This tradehub is a platform based on the public blockchain which has the intend to transform the supply chain (sequential) into a peer-to-peer distributed eco-system. This distributed eco-system brings down overall inventory of product.
 
 The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (green-ness of total delvery of product) will add an additional dimension to value. The provenance that blockchain will enable will track the ability to meet the specific requirements.
@@ -55,7 +55,7 @@ By this in essence a consumer centric ecosystem is created.
 
 ##### _Q: Why can't what you describe be done with current systems / technology?_
 
-A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction this is achieved by the fact that risk (safety stocks) now can also be distributed amongst the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to underatke big effort in setting up connections takes away a steep hurdle from the get go.
+A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction this is achieved by the fact that risk (safety stocks) now can also be distributed amongst the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to undertake big effort in setting up connections takes away a steep hurdle from the get go.
 
 ##### _Q: When will blockchain as per above be a reality?_
 
@@ -63,4 +63,4 @@ A: This revolutionary technology is a journey of development which will become s
 
 ##### _Q: What about privacy?_
 
-A: What about it? Please be specific in your questions?
+A: We understand that recording customer purchases on a blockchain could have negative privacy aspects. That's why we've made sure to record only the intended purchase on the blockchain, not the identity of the customer. We also do not record the exact delivery address, only a broad region around the delivery address. In the future, once zero-knowledge algorithms become more practical they can be used to make the data on the blockchain more private.
