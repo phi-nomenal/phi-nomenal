@@ -1,8 +1,8 @@
 import Web3 from 'web3'
 import contract from 'truffle-contract'
 
-import RFQRegistryJSON from 'contracts/build/contracts/RFQRegistry.json'
-import RFQJSON from 'contracts/build/contracts/RFQ.json'
+import RFQRegistryJSON from 'phi-nomenal-contracts/build/contracts/RFQRegistry.json'
+import RFQJSON from 'phi-nomenal-contracts/build/contracts/RFQ.json'
 
 const RFQRegistry = contract(RFQRegistryJSON)
 const RFQ = contract(RFQJSON)
