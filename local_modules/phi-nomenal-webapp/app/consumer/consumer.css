@@ -1,5 +1,12 @@
 @import 'slider.css';
 
+#consumer-ui {
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  background-color: #006efb;
+}
+
 .consumer-choose {
   width: 1024px;
   height: 768px;
@@ -18,6 +25,10 @@
   background-image: url('consumer-choose-shipment.png');
 }
 
+#consumer-bought {
+  background-image: url('consumer-bought.png')
+}
+
 #slider {
   position: relative;
   left: 410px;
@@ -34,9 +45,14 @@
   color: white;
 }
 
-#consumer-ui {
-  width: 100%;
-  height: 100%;
-  padding-top: 2em;
-  background-color: #006efb;
+#buy {
+  -webkit-appearance: none;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  left: 470px;
+  top: 550px;
+  width: 90px;
+  height: 32px;
+  opacity: 0;
 }

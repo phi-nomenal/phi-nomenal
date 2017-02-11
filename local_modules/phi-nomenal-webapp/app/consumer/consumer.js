@@ -11,6 +11,7 @@ class Consumer extends React.Component {
     this.state = { step: 'choose-product' }
     this.onProductChosen = this.onProductChosen.bind(this)
     this.onSliderChanged = this.onSliderChanged.bind(this)
+    this.onBuy = this.onBuy.bind(this)
   }
 
   onProductChosen (rfq) {
@@ -28,6 +29,10 @@ class Consumer extends React.Component {
     this.setState({ greenness: event.target.value })
   }
 
+  onBuy () {
+    this.setState({ step: 'bought' })
+  }
+
   render () {
     return <div id='consumer-ui'>{ this.renderStep() }</div>
   }
@@ -38,6 +43,8 @@ class Consumer extends React.Component {
       return this.renderChooseProduct()
     } else if (step === 'choose-shipment') {
       return this.renderChooseShipment()
+    } else if (step === 'bought') {
+      return this.renderBought()
     }
     return <div />
   }
@@ -53,6 +60,7 @@ class Consumer extends React.Component {
     return <div id='consumer-choose-shipment' className='consumer-choose'>
       <input id='slider' type='range' min='0' max='100' onChange={this.onSliderChanged} />
       <div id='delivery-date'>{ deliveryDate }</div>
+      <button id='buy' onClick={this.onBuy} />
     </div>
   }
 
@@ -65,6 +73,10 @@ class Consumer extends React.Component {
       quotation = { greenness: 0, deliveryDate: '' }
     }
     return quotation
+  }
+
+  renderBought () {
+    return <div id='consumer-bought' className='consumer-choose' />
   }
 }
 
