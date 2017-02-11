@@ -9,14 +9,8 @@ This platform which will show the value of using the _public blockhain_ on our _
 
 ##### 1.Introduction
 ##### 2.The principle
-######Trade hub
-######Provenance
-######Supply Chain
 ##### 3.Goal
 ##### 4.The Platform
-######Front-end
-######Back-end
-######God-mode
 ##### 5.FAQ
 
 ##### Introduction.
