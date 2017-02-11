@@ -1,4 +1,4 @@
-input[type=submit] {
+#consumer-ui input[type=submit] {
   -webkit-appearance: none;
   display: block;
   position: relative;
