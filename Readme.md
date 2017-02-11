@@ -12,7 +12,7 @@ This platform which will show the value of using the _public blockhain_ on our _
 ##### 1.Introduction
 ##### 2.The principle
 ##### 3.Goal
-##### 4.The Platform
+##### 4.The Tradehub
 ##### 5.FAQ
 
 ##### Introduction.
@@ -40,7 +40,7 @@ This tradehub is a platform based on the public blockchain which has the intend 
 
 The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (green-ness of total delvery of product) will add an additional dimension to value. The provenance that blockchain will enable will track the ability to meet the specific requirements.
 
-By this in essence a consumer centric ecosystem 
+By this in essence a consumer centric ecosystem is created.
 
 ![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Consumer%20Centric.png)
 
