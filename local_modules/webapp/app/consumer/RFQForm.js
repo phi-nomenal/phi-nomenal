@@ -6,31 +6,22 @@ import './RFQForm.css'
 class RFQForm extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {product: '', amount: 0, deliveryRegion: ''}
+    this.state = {product: '', amount: 1, deliveryRegion: ''}
 
-    this.handleProductChange = this.handleProductChange.bind(this)
-    this.handleAmountChange = this.handleAmountChange.bind(this)
-    this.handleDeliveryRegionChange = this.handleDeliveryRegionChange.bind(this)
+    this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleProductChange (event) {
-    this.setState({product: event.target.value})
-  }
-
-  handleAmountChange (event) {
-    this.setState({amount: event.target.value})
-  }
-
-  handleDeliveryRegionChange (event) {
-    this.setState({deliveryRegion: event.target.value})
+  handleInputChange (event) {
+    const target = event.target
+    this.setState({[target.name]: target.value})
   }
 
   async handleSubmit (event) {
     let rfq = await RFQ.new(
       this.state.product,
-       this.state.amount,
-       this.state.deliveryRegion, {from: accounts[0], gas: 400000})
+      this.state.amount,
+      this.state.deliveryRegion, {from: accounts[0], gas: 400000})
     let registry = await RFQRegistry.deployed()
     await registry.register(rfq.address, {from: accounts[0]})
     event.preventDefault()
@@ -40,15 +31,15 @@ class RFQForm extends React.Component {
     return <form onSubmit={this.handleSubmit}>
       <div className='formElem'>
         <label>Product:</label>
-        <input type='text' value={this.state.product} onChange={this.handleProductChange} />
+        <input name='product' type='text' value={this.state.product} onChange={this.handleInputChange} />
       </div>
       <div className='formElem'>
         <label>Amount:</label>
-        <input type='text' value={this.state.amount} onChange={this.handleAmountChange} />
+        <input name='amount' type='text' value={this.state.amount} onChange={this.handleInputChange} />
       </div>
       <div className='formElem'>
         <label>Delivery region:</label>
-        <input type='text' value={this.state.deliveryRegion} onChange={this.handleDeliveryRegionChange} />
+        <input name='deliveryRegion' type='text' value={this.state.deliveryRegion} onChange={this.handleInputChange} />
       </div>
       <div className='formElem'>
         <label>&nbsp;</label>
