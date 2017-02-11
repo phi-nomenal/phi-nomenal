@@ -36,7 +36,7 @@ This is where (public) blockchain will make a profound impact, and will create i
 The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent. 
 This tradehub is a platform based on the public blockchain which has the intend to transform the supply chain (sequential) into a peer-to-peer distributed eco-system. This distributed eco-system brings down overall inventory of product.
 
-The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (greenness of total delvery of product) will
+The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (green-ness of total delvery of product) will add an additional dimension to value. The provenance that blockchain will enable will track the ability to meet the specific requirements.
 
 
 
