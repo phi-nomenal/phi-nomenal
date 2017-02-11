@@ -30,9 +30,9 @@ class RFQForm extends React.Component {
     let rfq = await RFQ.new(
       this.state.product,
        this.state.amount,
-       this.state.deliveryRegion, {from: accounts[0], gas: 320000})
+       this.state.deliveryRegion, {from: accounts[0], gas: 400000})
     let registry = await RFQRegistry.deployed()
-    await registry.register.call(rfq.address, {from: accounts[0]})
+    await registry.register(rfq.address, {from: accounts[0]})
     event.preventDefault()
   }
 
