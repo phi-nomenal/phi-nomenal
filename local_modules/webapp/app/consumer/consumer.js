@@ -6,6 +6,7 @@ class Consumer extends React.Component {
   render () {
     return <div>
       <h1>Consumer</h1>
+      <h2>Create new RFQ</h2>
       <RFQForm />
     </div>
   }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { RFQ, RFQRegistry, accounts } from '../model/Contracts'
+import './RFQForm.css'
 
 class RFQForm extends React.Component {
   constructor (props) {
@@ -37,19 +38,22 @@ class RFQForm extends React.Component {
 
   render () {
     return <form onSubmit={this.handleSubmit}>
-      <div><label>
-          Product:
+      <div className='formElem'>
+        <label>Product:</label>
           <input type='text' value={this.state.product} onChange={this.handleProductChange} />
-      </label></div>
-      <div><label>
-          Amount:
+      </div>
+      <div className='formElem'>
+        <label>Amount:</label>
           <input type='text' value={this.state.amount} onChange={this.handleAmountChange} />
-      </label></div>
-      <div><label>
-          Delivery region:
+      </div>
+      <div className='formElem'>
+        <label>Delivery region:</label>
           <input type='text' value={this.state.deliveryRegion} onChange={this.handleDeliveryRegionChange} />
-      </label></div>
-      <input type='submit' value='Submit' />
+      </div>
+      <div className='formElem'>
+        <label>&nbsp;</label>
+        <input className='submit' type='submit' value='Create RFQ' />
+      </div>
     </form>
   }
 }

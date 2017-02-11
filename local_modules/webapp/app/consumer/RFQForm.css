@@ -1,0 +1,15 @@
+.formElem {
+    overflow: hidden;
+
+    input {
+        float: left;
+    }
+
+    label {
+        float: left;
+        display: block;
+        width: 11em;
+        text-align: right;
+        padding-right: 1em;
+    }
+}
