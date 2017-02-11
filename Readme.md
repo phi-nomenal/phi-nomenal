@@ -10,7 +10,7 @@ Welcome to the Supply & Blockchain platform built at the _DBH17_!!
 This platform which will show the value of using the _public blockhain_ on our _supply chain_. The platform is called Phinomenal
 
 ##### 1.Introduction
-##### 2.The principle
+##### 2.What is the current problem
 ##### 3.Goal
 ##### 4.The Tradehub
 ##### 5.FAQ
@@ -33,7 +33,7 @@ The current supply chain is a sequence of processes and transaction which limits
 
 This is where (public) blockchain will make a profound impact, and will create infrastructural transparency by default.
 
-###### Tradehub
+##### Tradehub
 
 The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent. 
 This tradehub is a platform based on the public blockchain which has the intend to transform the supply chain (sequential) into a peer-to-peer distributed eco-system. This distributed eco-system brings down overall inventory of product.
