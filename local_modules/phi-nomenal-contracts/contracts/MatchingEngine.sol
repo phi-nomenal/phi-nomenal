@@ -3,7 +3,7 @@ import './RFQ.sol';
 import './Quotation.sol';
 
 contract MatchingEngine {
-    Quotation[] public quotations;
+    Quotation[] quotations;
 
     function MatchingEngine() {
         addQuotation(new Quotation(100, 'in 3 weeks'));
@@ -11,10 +11,14 @@ contract MatchingEngine {
         addQuotation(new Quotation(25, 'in 2 hours'));
     }
 
-    /*function getQuotations(RFQ rfq) constant returns (Quotation[]) {
-        return quotations;
+    function getAmountOfQuotations(RFQ rfq) constant returns (uint) {
+        return quotations.length;
     }
-*/
+
+    function getQuotation(RFQ rfq, uint index) constant returns (Quotation) {
+        return quotations[index];
+    }
+
     function amountOfQuotations() constant returns (uint) {
         return quotations.length;
     }
