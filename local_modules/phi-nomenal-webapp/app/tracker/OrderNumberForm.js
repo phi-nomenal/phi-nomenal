@@ -1,7 +1,7 @@
 import React from 'react'
 
 class OrderNumberForm extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = { ordernr: '' }
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -17,11 +17,11 @@ class OrderNumberForm extends React.Component {
     event.preventDefault()
   }
 
-  render() {
+  render () {
     return <form onSubmit={this.handleSubmit}>
       <label>Enter your order number:</label>
-      <input name='ordernr' type='text' value={this.state.ordernr} onChange={this.handleInputChange}/>
-      <input className='submit' type='submit' value='Find order'/>
+      <input name='ordernr' type='text' value={this.state.ordernr} onChange={this.handleInputChange} />
+      <input className='submit' type='submit' value='Find order' />
     </form>
   }
 }

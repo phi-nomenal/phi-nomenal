@@ -3,7 +3,7 @@ import './tracker.css'
 import OrderNumberForm from './OrderNumberForm'
 
 class Tracker extends React.Component {
-  render() {
+  render () {
     return <div id='tracker-ui'>
       <h1>Order Tracking</h1>
       <OrderNumberForm />
