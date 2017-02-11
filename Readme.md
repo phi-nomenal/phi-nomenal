@@ -28,7 +28,7 @@ The customer has the choice of purchasing items based on attributes which matter
 
 The current supply chain is a sequence of processes and transaction which limits end-to-end transparency on transactions as well as inventories. This is a result of different parties in the supply have no prime interest to share this information as well as the result of a lack of "public" infrastructure to allow this sharing. Now when companies do share accross the supply chain, this is done through connecting with / interfacing between companies' ERP systems (or other).
 
-![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Supply%20Chain%20Now%20v2.png
+![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Supply%20Chain%20Now%20v2.png)
 
 
 This is where (public) blockchain will make a profound impact, and will create infrastructural transparency by default.
