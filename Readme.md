@@ -27,14 +27,21 @@ Full inventory tracking- detailing attributes of value (such as carbon emissions
 This trading hub is safe and reliable as partner's capabilities are verified through validation of their existence and prior transactions. No further checks needed.
 Geographical customer demand
 The customer has the choice of purchasing items based on attributes which matter to him or her. This will drive the demand. Through leveraging information available in the blockchain- smart logistic decisions are possible- through efficient, timely and carbon-neutral options available by suppliers in the trade hub. Moving stock from one point to another, and collaboratively between retailers.
-####The principle
+
+##### The principle
+
 The current supply chain is a sequence of processes and transaction which limits end-to-end transparency on transactions as well as inventories. This is a result of different parties in the supply have no prime interest to share this information as well as the result of a lack of "public" infrastructure to allow this sharing. Now when companies do share accross the supply chain, this is done through connecting with / interfacing between companies' ERP systems (or other).
 
-This is where blockchain 
+This is where (public) blockchain will make a profound impact, and will create infrastructural transparency by default.
 
-_Picture of suuply chain here_
+_Picture of suply chain here_
 
+###### Tradehub
 
+The break-through idea of the application of blockchain within supply chain is the establishment of a tradeplace where supplier, trade partners and logistic service providers can offer their product and services and engage in a trusted arena where all transactions will become transparent. 
+This tradehub is a platform based on the public blockchain which has the intend to transform the supply chain (sequential) into a peer-to-peer distributed eco-system. This distributed eco-system brings down overall inventory of product.
+
+The main function of the tradehub is to bring consumer demand to market in the partner network. Where requirements like sustainability (greenness of total delvery of product) will
 
 
 
