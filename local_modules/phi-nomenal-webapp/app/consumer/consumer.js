@@ -35,7 +35,9 @@ class Consumer extends React.Component {
   }
 
   renderChooseShipment () {
-    return <div id='consumer-choose-shipment' />
+    return <div id='consumer-choose-shipment'>
+      <input id='slider' type='range' />
+    </div>
   }
 }
 

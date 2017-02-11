@@ -1,0 +1,17 @@
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #02d54c;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
