@@ -1,0 +1,17 @@
+#god {
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  background-color: #006efb;
+}
+
+#god-overview {
+  width: 1024px;
+  height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1024px auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('god.png')
+}
