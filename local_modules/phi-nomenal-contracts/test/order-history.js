@@ -21,6 +21,18 @@ contract('OrderHistory', function () {
     })
   })
 
+  describe('after adding demo data', function () {
+    beforeEach(function () {
+      return orderHistory.addDemoData()
+    })
+
+    it('has 3 legs', function () {
+      return orderHistory.amountOfLegs().then(function (amount) {
+        expect(amount.toNumber()).to.eql(3)
+      })
+    })
+  })
+
   describe('after adding a leg', function () {
     let fromLocation
     let toLocation
