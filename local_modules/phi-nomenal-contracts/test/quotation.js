@@ -5,7 +5,7 @@ const Quotation = artifacts.require('Quotation')
 
 contract('Quotation', function () {
   let greenness = 70
-  let deliveryDate = new Date(2017, 2, 11).getTime()
+  let deliveryDate = 'tomorrow'
 
   let quotation
 
@@ -22,7 +22,7 @@ contract('Quotation', function () {
 
   it('has a delivery date', function () {
     return quotation.deliveryDate().then(function (retrievedDate) {
-      return expect(retrievedDate.toNumber()).to.eql(deliveryDate)
+      return expect(retrievedDate).to.eql(deliveryDate)
     })
   })
 })
