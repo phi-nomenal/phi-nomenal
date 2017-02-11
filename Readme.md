@@ -29,7 +29,7 @@ The current supply chain is a sequence of processes and transaction which limits
 This is where (public) blockchain will make a profound impact, and will create infrastructural transparency by default.
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
+![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Supply%20Chain%20Now%20v2.png "Logo Title Text 1") 
 
 
 ###### Tradehub
