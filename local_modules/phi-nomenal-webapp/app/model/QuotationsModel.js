@@ -1,10 +1,15 @@
-import { Quotation } from './Contracts'
+import { Quotation, MatchingEngine } from './Contracts'
 
 export default class QuotationsModel {
 
   matchingEngine
 
-  constructor (matchingEngine) {
+  static async create () {
+    let engine = await MatchingEngine.deployed()
+    return new QuotationsModel(engine)
+  }
+
+  constructor (matchingEngine = MatchingEngine.deployed()) {
     this.matchingEngine = matchingEngine
   }
 

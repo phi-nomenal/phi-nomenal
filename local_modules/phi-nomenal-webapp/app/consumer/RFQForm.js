@@ -25,12 +25,12 @@ class RFQForm extends React.Component {
       this.state.deliveryRegion, {from: accounts[0], gas: 400000})
     let registry = await RFQRegistry.deployed()
     await registry.register(rfq.address, {from: accounts[0]})
-    this.notifyCallback()
+    this.notifyCallback(rfq)
   }
 
-  notifyCallback () {
+  notifyCallback (rfq) {
     if (this.props.onRequestRegistered) {
-      this.props.onRequestRegistered()
+      this.props.onRequestRegistered(rfq)
     }
   }
 

@@ -1,12 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
 import RFQForm from './RFQForm'
+import QuotationsModel from '../model/QuotationsModel'
 import './consumer.css'
 
 class Consumer extends React.Component {
   constructor () {
     super()
     this.state = { step: 'choose-product' }
+    this.onProductChosen = this.onProductChosen.bind(this)
+  }
+
+  onProductChosen (rfq) {
+    this.setState({ step: 'choose-shipment' })
+    this.loadQuotations(rfq)
+  }
+
+  async loadQuotations (rfq) {
+    let quotationsModel = await QuotationsModel.create()
+    let quotations = await quotationsModel.getQuotations(rfq)
+    this.setState({ quotations: quotations })
   }
 
   render () {
@@ -24,11 +37,8 @@ class Consumer extends React.Component {
   }
 
   renderChooseProduct () {
-    let onProductChosen = function () {
-      this.setState({ step: 'choose-shipment' })
-    }.bind(this)
     return <div id='consumer-choose-product' className='consumer-choose'>
-      <RFQForm onRequestRegistered={onProductChosen} />
+      <RFQForm onRequestRegistered={this.onProductChosen} />
     </div>
   }
 
