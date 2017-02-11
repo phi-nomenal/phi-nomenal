@@ -1,6 +1,7 @@
 const path = require('path')
 const babelModule = require('./webpack/babel-module')
 const cssModule = require('./webpack/css-module')
+const pngModule = require('./webpack/png-module')
 const htmlPlugin = require('./webpack/html-plugin')
 const workaroundPlugin = require('./webpack/workaround-plugin')
 
@@ -14,7 +15,7 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
-    loaders: [ babelModule, cssModule ]
+    loaders: [ babelModule, cssModule, pngModule ]
   },
   devServer: {
     contentBase: 'dist'
