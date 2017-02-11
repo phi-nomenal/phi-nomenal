@@ -9,7 +9,7 @@ export default class QuotationsModel {
     return new QuotationsModel(engine)
   }
 
-  constructor (matchingEngine = MatchingEngine.deployed()) {
+  constructor (matchingEngine) {
     this.matchingEngine = matchingEngine
   }
 
