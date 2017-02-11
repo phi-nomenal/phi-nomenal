@@ -44,5 +44,14 @@ By this in essence a consumer centric ecosystem is created.
 
 ![alt text](https://github.com/phi-nomenal/phi-nomenal/blob/master/Consumer%20Centric.png)
 
+##### FAQ
+
+##### _Q: Why can't what you describe not be done with current systems / technology?_
+
+A: Supply chain does have a lot of similarities with blockchain. In case of overall inventory reduction thsi is achieved by the fact that risk (safety stocks) now can also be distributed among the partners in the supply chain. On top of which, as stated above, the fact that (public) blockchain does not require companies to underatke big effort in setting up connections takes away a steep hurdle from the get go.
+
+##### _Q: Why do your toothbrushes suck?_ Rgds, Anja
+
+A: (*&^@)$!!!
 
 
