@@ -8,12 +8,12 @@ const RFQRegistry = contract(RFQRegistryJSON)
 const RFQ = contract(RFQJSON)
 
 const web3Location = 'http://localhost:8545'
-var web3Provided;
+var web3Provided
 // Supports Metamask and Mist, and other wallets that provide 'web3'.
 if (typeof web3 !== 'undefined') {
   // Use the Mist/wallet provider.
   // eslint-disable-next-line
-  web3Provided = new Web3(web3.currentProvider);
+  web3Provided = new Web3(web3.currentProvider)
 } else {
   web3Provided = new Web3(new Web3.providers.HttpProvider(web3Location))
 }
