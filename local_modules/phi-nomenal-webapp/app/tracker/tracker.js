@@ -11,7 +11,9 @@ class Tracker extends React.Component {
   }
 
   render () {
-    return <div id='tracker-ui'>{ this.renderStep() }</div>
+    return <div id='tracker'>
+      <div id='tracker-ui'>{ this.renderStep() }</div>
+    </div>
   }
 
   renderStep () {
@@ -27,9 +29,7 @@ class Tracker extends React.Component {
       this.setState({ step: 'show-tracking-info' })
       this.loadOrderHistory()
     }.bind(this)
-    return <div><h1>Order Tracking</h1>
-      <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
-    </div>
+    return <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
   }
 
   async loadOrderHistory () {

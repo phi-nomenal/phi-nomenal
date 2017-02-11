@@ -1,5 +1,30 @@
+#tracker {
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  background-color: #006efb;
+}
+
 #tracker-ui {
-    padding: 1em
+  width: 1024px;
+  height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1024px auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('tracker-empty.png')
+}
+
+#order-number-form {
+  position: relative;
+  left: 410px;
+  top: 120px;
+  width: 300px;
+
+  input[type=text] {
+
+  }
 }
 
 #tracker-ui thead td {
