@@ -10,6 +10,10 @@ contract StockLocation {
     }
 
     function stockSize() constant returns (uint) {
-        return 0;
+        return stock.length;
+    }
+
+    function addStock(Product product) {
+        stock.push(product);
     }
 }
