@@ -18,4 +18,10 @@ contract('StockLocation', function () {
       return expect(retrievedLocation).to.eql(location)
     })
   })
+
+  it('has zero stock', function () {
+    return stockLocation.stockSize().then(function (stockSize) {
+      return expect(stockSize.toNumber()).to.eql(0)
+    })
+  })
 })
