@@ -45,7 +45,9 @@ class Tracker extends React.Component {
       </thead>
       <tbody>
         { this.state.legs.map(this.renderLeg) }
-        <tr><td /><td /><td className='totals numeric'><strong>109</strong></td></tr>
+        <tr><td /><td /><td className='totals numeric'><strong>{
+          this.state.legs.reduce(function (emission, leg) { return emission + leg.co2emission }, 0)
+        }</strong></td></tr>
       </tbody>
     </table>
   }
