@@ -1,14 +1,21 @@
 @import 'slider.css';
 
-#consumer-choose-shipment {
+.consumer-choose {
   width: 1024px;
   height: 768px;
-  background-image: url('consumer-background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1024px auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#consumer-choose-product {
+  background-image: url('consumer-choose-product.png');
+}
+
+#consumer-choose-shipment {
+  background-image: url('consumer-choose-shipment.png');
 }
 
 #slider {

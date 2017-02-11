@@ -6,7 +6,7 @@ import './RFQForm.css'
 class RFQForm extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {product: '', amount: 1, deliveryRegion: ''}
+    this.state = {product: 'HX9332/04', amount: 1, deliveryRegion: 'Groningen, Netherlands'}
 
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -36,22 +36,10 @@ class RFQForm extends React.Component {
 
   render () {
     return <form onSubmit={this.handleSubmit}>
-      <div className='formElem'>
-        <label>Product:</label>
-        <input name='product' type='text' value={this.state.product} onChange={this.handleInputChange} />
-      </div>
-      <div className='formElem'>
-        <label>Amount:</label>
-        <input name='amount' type='text' value={this.state.amount} onChange={this.handleInputChange} />
-      </div>
-      <div className='formElem'>
-        <label>Delivery region:</label>
-        <input name='deliveryRegion' type='text' value={this.state.deliveryRegion} onChange={this.handleInputChange} />
-      </div>
-      <div className='formElem'>
-        <label>&nbsp;</label>
-        <input className='submit' type='submit' value='Create RFQ' />
-      </div>
+      <input name='product' type='hidden' value={this.state.product} onChange={this.handleInputChange} />
+      <input name='amount' type='hidden' value={this.state.amount} onChange={this.handleInputChange} />
+      <input name='deliveryRegion' type='hidden' value={this.state.deliveryRegion} onChange={this.handleInputChange} />
+      <input className='submit' type='submit' value='Create RFQ' />
     </form>
   }
 }

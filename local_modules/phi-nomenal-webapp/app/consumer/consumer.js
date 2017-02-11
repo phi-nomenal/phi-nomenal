@@ -27,15 +27,13 @@ class Consumer extends React.Component {
     let onProductChosen = function () {
       this.setState({ step: 'choose-shipment' })
     }.bind(this)
-    return <div id='consumer-choose-product'>
-      <h1>Consumer</h1>
-      <h2>Create new RFQ</h2>
+    return <div id='consumer-choose-product' className='consumer-choose'>
       <RFQForm onRequestRegistered={onProductChosen} />
     </div>
   }
 
   renderChooseShipment () {
-    return <div id='consumer-choose-shipment'>
+    return <div id='consumer-choose-shipment' className='consumer-choose'>
       <input id='slider' type='range' />
     </div>
   }
