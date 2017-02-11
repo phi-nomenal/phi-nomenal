@@ -24,7 +24,7 @@ This trading hub is safe and reliable as partner's capabilities are verified thr
 Geographical customer demand
 The customer has the choice of purchasing items based on attributes which matter to him or her. This will drive the demand. Through leveraging information available in the blockchain- smart logistic decisions are possible- through efficient, timely and carbon-neutral options available by suppliers in the trade hub. Moving stock from one point to another, and collaboratively between retailers.
 
-##### The principle
+##### The current problem
 
 The current supply chain is a sequence of processes and transaction which limits end-to-end transparency on transactions as well as inventories. This is a result of different parties in the supply have no prime interest to share this information as well as the result of a lack of "public" infrastructure to allow this sharing. Now when companies do share accross the supply chain, this is done through connecting with / interfacing between companies' ERP systems (or other).
 
