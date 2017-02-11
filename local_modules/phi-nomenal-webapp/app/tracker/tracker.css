@@ -1,3 +1,15 @@
 #tracker-ui {
     padding: 1em
 }
+
+#tracker-ui thead td {
+    border-bottom: 1px solid #333;
+}
+
+#tracker-ui tbody td.totals {
+    border-top: 1px solid #333;
+}
+
+#tracker-ui td.numeric {
+    text-align: right;
+}

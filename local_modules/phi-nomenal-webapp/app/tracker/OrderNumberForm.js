@@ -15,6 +15,13 @@ class OrderNumberForm extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault()
+    this.notifyCallback()
+  }
+
+  notifyCallback () {
+    if (this.props.onOrderNumberEntered) {
+      this.props.onOrderNumberEntered()
+    }
   }
 
   render () {
@@ -24,6 +31,10 @@ class OrderNumberForm extends React.Component {
       <input className='submit' type='submit' value='Find order' />
     </form>
   }
+}
+
+OrderNumberForm.propTypes = {
+  onOrderNumberEntered: React.PropTypes.func
 }
 
 export default OrderNumberForm
