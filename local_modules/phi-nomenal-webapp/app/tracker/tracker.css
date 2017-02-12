@@ -57,3 +57,113 @@
 #tracker-ui td.numeric {
     text-align: right;
 }
+
+#tracker-ui span.icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+
+#tracker-ui span.location.type-0 {
+    background-image: url('img/location-type-0.png');
+}
+
+#tracker-ui span.location.type-1 {
+    background-image: url('img/location-type-1.png');
+}
+
+#tracker-ui span.location.type-2 {
+    background-image: url('img/location-type-2.png');
+}
+
+#tracker-ui span.location.type-3 {
+    background-image: url('img/location-type-3.png');
+}
+
+#tracker-ui span.mode.leg-mode-0 {
+    background-image: url('img/leg-mode-0.png');
+}
+
+#tracker-ui span.mode.leg-mode-2 {
+    background-image: url('img/leg-mode-2.png');
+}
+
+#tracker-ui span.mode.leg-mode-3 {
+    background-image: url('img/leg-mode-3.png');
+}
+
+#tracker-ui span.leafs {
+    display: block;
+    width: 112px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 112px 50px;
+}
+
+#tracker-ui span.leafs.leafs-1 {
+    background-image: url('img/leaf1.png');
+}
+
+#tracker-ui span.leafs.leafs-2 {
+    background-image: url('img/leaf2.png');
+}
+
+#tracker-ui span.leafs.leafs-3 {
+    background-image: url('img/leaf3.png');
+}
+
+#tracker-ui {
+    div.leg {
+        clear: both;
+        position: relative;
+    }
+
+    div.leg-0 {
+        top: 215px;
+        left: 90px;
+    }
+
+    div.leg-1 {
+        top: 245px;
+        left: 236px;
+    }
+
+    div.leg-2 {
+        top: 280px;
+        left: 391px;
+    }
+
+    span { float: left; }
+    span.icon.from {
+        position: relative;
+        left: 20px;
+    }
+
+    span.mode {
+        position: relative;
+        left: 50px;
+    }
+
+    span.icon.to {
+        position: relative;
+        left: 70px;
+    }
+
+    span.distance {
+        position: relative;
+        left: 100px;
+        top: 24px;
+        font-size: 20pt;
+        color: #666;
+    }
+
+    span.leafs {
+        position: relative;
+        left: 140px;
+        top: 8px;
+    }
+}

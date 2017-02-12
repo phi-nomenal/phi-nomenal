@@ -3,6 +3,8 @@ import './tracker.css'
 import OrderNumberForm from './OrderNumberForm'
 import OrderHistoryModel from '../model/OrderHistoryModel'
 
+import './img/location-type-0.png'
+
 class Tracker extends React.Component {
   constructor (props) {
     super(props)
@@ -64,12 +66,14 @@ class Tracker extends React.Component {
     </div>
   }
 
-  renderLeg (leg) {
-    return <tr key={leg.id}>
-      <td>From {leg.from.geolocation} to {leg.to.geolocation}</td>
-      <td>{leg.mode}</td>
-      <td className='numeric'>{leg.co2emission}</td>
-    </tr>
+  renderLeg (leg, index) {
+    return <div className={'leg leg-' + index} key={leg.id}>
+      <span className={'icon location from type-' + leg.from.locationType} />
+      <span className={'icon mode leg-mode-' + leg.mode} />
+      <span className={'icon location to type-' + leg.to.locationType} />
+      <span className='distance'>{leg.distance} km</span>
+      <span className={'leafs leafs-' + (index + 1)} />
+    </div>
   }
 }
 
