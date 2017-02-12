@@ -14,14 +14,14 @@ export default class OrderHistoryModel {
   }
 
   async getLegs () {
-    let result = []
+    let result = { legs: [] }
     let amount = await this.orderHistory.amountOfLegs()
     for (let i = 0; i < amount; i++) {
       let legAddress = await this.orderHistory.legs(i)
       let leg = OrderHistoryLeg.at(legAddress)
       let from = Location.at(await leg.from())
       let to = Location.at(await leg.to())
-      result.push({
+      result.legs.push({
         id: leg.address,
         mode: (await leg.mode()).toNumber(),
         distance: (await leg.distance()).toNumber(),

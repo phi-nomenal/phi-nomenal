@@ -38,7 +38,7 @@ class Tracker extends React.Component {
 
   async loadOrderHistory () {
     let model = await OrderHistoryModel.create()
-    let legs = await model.getLegs()
+    let legs = (await model.getLegs()).legs
     this.setState({legs: legs})
   }
 

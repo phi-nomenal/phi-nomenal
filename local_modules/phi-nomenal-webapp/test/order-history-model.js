@@ -1,9 +1,12 @@
 /* eslint-env mocha */
 import OrderHistoryModel from '../app/model/OrderHistoryModel'
 import { OrderHistory, OrderHistoryLeg, Location } from '../app/model/Contracts'
-import { expect } from 'chai'
+import chai, { expect } from 'chai'
+import chaiSubset from 'chai-subset'
 import td from 'testdouble'
 import BigNumber from 'bignumber.js'
+
+chai.use(chaiSubset)
 
 describe('OrderHistoryModel', function () {
   let orderHistoryModel
@@ -15,7 +18,7 @@ describe('OrderHistoryModel', function () {
   })
 
   it('is empty', async function () {
-    expect(await orderHistoryModel.getLegs()).to.eql([])
+    expect(await orderHistoryModel.getLegs()).to.eql({legs: []})
   })
 
   context('when there is a leg', function () {
@@ -59,7 +62,7 @@ describe('OrderHistoryModel', function () {
     })
 
     it('retrieves legs from the order history', async function () {
-      let expected = [
+      let expected = { legs: [
         {
           id: leg.address,
           mode: mode,
@@ -68,9 +71,9 @@ describe('OrderHistoryModel', function () {
           from: { locationType: fromType, geolocation: fromGeolocation },
           to: { locationType: toType, geolocation: toGeolocation }
         }
-      ]
+      ]}
       let actual = await orderHistoryModel.getLegs()
-      expect(actual).to.eql(expected)
+      expect(actual).to.containSubset(expected)
     })
   })
 })
