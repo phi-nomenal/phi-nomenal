@@ -7,6 +7,7 @@ class Tracker extends React.Component {
   constructor (props) {
     super(props)
     this.state = { step: '', legs: [] }
+    this.onOrderNumberEntered = this.onOrderNumberEntered.bind(this)
     this.renderLeg = this.renderLeg.bind(this)
   }
 
@@ -25,13 +26,14 @@ class Tracker extends React.Component {
   }
 
   renderSearchForm () {
-    let onOrderNumberEntered = function () {
-      this.setState({ step: 'show-tracking-info' })
-      this.loadOrderHistory()
-    }.bind(this)
     return <div id='tracker-ui' className='form'>
-      <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
+      <OrderNumberForm onOrderNumberEntered={this.onOrderNumberEntered} />
     </div>
+  }
+
+  onOrderNumberEntered () {
+    this.setState({ step: 'show-tracking-info' })
+    this.loadOrderHistory()
   }
 
   async loadOrderHistory () {
@@ -42,6 +44,7 @@ class Tracker extends React.Component {
 
   renderTrackingInfo () {
     return <div id='tracker-ui' className='results'>
+      <OrderNumberForm onOrderNumberEntered={this.onOrderNumberEntered} />
       { this.state.legs.map(this.renderLeg) }
     </div>
   }
