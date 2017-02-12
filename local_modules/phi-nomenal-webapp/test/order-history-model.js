@@ -18,7 +18,7 @@ describe('OrderHistoryModel', function () {
   })
 
   it('is empty', async function () {
-    expect(await orderHistoryModel.getLegs()).to.eql({legs: []})
+    expect(await orderHistoryModel.getLegs()).to.containSubset({legs: []})
   })
 
   context('when there is a leg', function () {
@@ -74,6 +74,16 @@ describe('OrderHistoryModel', function () {
       ]}
       let actual = await orderHistoryModel.getLegs()
       expect(actual).to.containSubset(expected)
+    })
+
+    it('calculates the total co2emission', async function () {
+      let history = await orderHistoryModel.getLegs()
+      expect(history).to.containSubset({
+        totals: {
+          co2emission: co2emission,
+          distance: distance
+        }
+      })
     })
   })
 })

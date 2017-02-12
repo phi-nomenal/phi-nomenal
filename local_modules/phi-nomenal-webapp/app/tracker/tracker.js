@@ -6,7 +6,11 @@ import OrderHistoryModel from '../model/OrderHistoryModel'
 class Tracker extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { step: '', legs: [] }
+    this.state = {
+      step: '',
+      legs: [],
+      totals: { co2emission: 0, distance: 0 }
+    }
     this.onOrderNumberEntered = this.onOrderNumberEntered.bind(this)
     this.renderLeg = this.renderLeg.bind(this)
   }
@@ -38,8 +42,11 @@ class Tracker extends React.Component {
 
   async loadOrderHistory () {
     let model = await OrderHistoryModel.create()
-    let legs = (await model.getLegs()).legs
-    this.setState({legs: legs})
+    let legs = await model.getLegs()
+    this.setState({
+      legs: legs.legs,
+      totals: legs.totals
+    })
   }
 
   renderTrackingInfo () {
