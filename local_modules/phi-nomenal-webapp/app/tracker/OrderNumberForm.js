@@ -26,8 +26,8 @@ class OrderNumberForm extends React.Component {
 
   render () {
     return <form id='order-number-form' onSubmit={this.handleSubmit}>
-      <input name='ordernr' type='text' value={this.state.ordernr} onChange={this.handleInputChange} />
-      <input className='submit' type='submit' value='🔎' />
+      <input name='ordernr' type='text' value={this.state.ordernr} placeholder='place your ordernumber here' onChange={this.handleInputChange} />
+      <input className='submit' type='submit' value='🔍' />
     </form>
   }
 }
