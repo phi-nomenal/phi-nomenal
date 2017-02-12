@@ -16,6 +16,10 @@
   background-image: url('tracker-empty.png')
 }
 
+#tracker-ui.results {
+    background-image: url('img/legsleeg.png')
+}
+
 #order-number-form {
   position: relative;
   left: 410px;

@@ -12,7 +12,7 @@ class Tracker extends React.Component {
 
   render () {
     return <div id='tracker'>
-      <div id='tracker-ui'>{ this.renderStep() }</div>
+      { this.renderStep() }
     </div>
   }
 
@@ -29,7 +29,9 @@ class Tracker extends React.Component {
       this.setState({ step: 'show-tracking-info' })
       this.loadOrderHistory()
     }.bind(this)
-    return <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
+    return <div id='tracker-ui' className='form'>
+      <OrderNumberForm onOrderNumberEntered={onOrderNumberEntered} />
+    </div>
   }
 
   async loadOrderHistory () {
@@ -39,7 +41,7 @@ class Tracker extends React.Component {
   }
 
   renderTrackingInfo () {
-    return <table>
+    return <div id='tracker-ui' className='results'><table>
       <thead>
         <tr><td>Description</td><td>Transportation</td><td className='numeric'>CO<sub>2</sub> Emission</td></tr>
       </thead>
@@ -49,7 +51,7 @@ class Tracker extends React.Component {
           this.state.legs.reduce(function (emission, leg) { return emission + leg.co2emission }, 0)
         }</strong></td></tr>
       </tbody>
-    </table>
+    </table></div>
   }
 
   renderLeg (leg) {
