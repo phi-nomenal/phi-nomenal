@@ -154,13 +154,17 @@
     }
 
     div.leg-1 {
-        top: 245px;
-        left: 236px;
+        top: 317px;
+        left: 230px;
     }
 
     div.leg-2 {
-        top: 280px;
+        top: 419px;
         left: 391px;
+
+        span.distance {
+            width: 100px;
+        }
     }
 
     span { float: left; }
@@ -181,15 +185,17 @@
 
     span.distance {
         position: relative;
-        left: 100px;
+        left: 80px;
         top: 24px;
         font-size: 20pt;
         color: #666;
+        width: 130px;
+        text-align: right;
     }
 
     span.leafs {
         position: relative;
-        left: 140px;
+        left: 100px;
         top: 8px;
     }
 }
