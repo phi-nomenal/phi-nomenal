@@ -15,19 +15,19 @@ contract OrderHistory {
     }
 
     function addDemoData() {
-        Location factoryLocation = new Location(Location.LocationType.Factory, 'Changzou');
-        Location warehouseLocation = new Location(Location.LocationType.Warehouse, 'Poland');
+        Location factoryLocation = new Location(Location.LocationType.Factory, 'Shenzhen');
+        Location warehouseLocation = new Location(Location.LocationType.Warehouse, 'Rotterdam');
         Location retailerLocation = new Location(Location.LocationType.Retailer, 'Groningen');
-        Location consumerLocation = new Location(Location.LocationType.Consumer, 'Anja');
+        Location consumerLocation = new Location(Location.LocationType.Consumer, 'The Big Building');
 
         OrderHistoryLeg leg1 = new OrderHistoryLeg(
-            OrderHistoryLeg.Mode.Airplane, 4200, 500,
+            OrderHistoryLeg.Mode.Airplane, 11220, 4000,
             factoryLocation, warehouseLocation);
         OrderHistoryLeg leg2 = new OrderHistoryLeg(
-            OrderHistoryLeg.Mode.Truck, 700, 120,
+            OrderHistoryLeg.Mode.Truck, 201, 50,
             warehouseLocation, retailerLocation);
         OrderHistoryLeg leg3 = new OrderHistoryLeg(
-            OrderHistoryLeg.Mode.Bike, 10, 2,
+            OrderHistoryLeg.Mode.Bike, 5, 1,
             retailerLocation, consumerLocation);
 
         legs.push(leg1);
