@@ -6,6 +6,7 @@
 }
 
 #tracker-ui {
+  position: relative;
   width: 1024px;
   height: 768px;
   background-repeat: no-repeat;
@@ -47,10 +48,11 @@
 }
 
 #tracker-totals {
-  position: relative;
+  position: absolute;
   display: block;
   box-sizing: border-box;
   width: 1024px;
+  left: 0px;
   top: 500px;
 }
 
@@ -143,7 +145,7 @@
 #tracker-ui {
     div.leg {
         clear: both;
-        position: relative;
+        position: absolute;
     }
 
     div.leg-0 {
