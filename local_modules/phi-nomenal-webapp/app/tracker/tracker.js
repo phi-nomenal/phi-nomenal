@@ -53,6 +53,14 @@ class Tracker extends React.Component {
     return <div id='tracker-ui' className='results'>
       <OrderNumberForm onOrderNumberEntered={this.onOrderNumberEntered} />
       { this.state.legs.map(this.renderLeg) }
+      <div id='tracker-total-co2'>
+        <p>{this.state.totals.co2emission}</p>
+        <p>CO₂ emission</p>
+      </div>
+      <div id='tracker-total-distance'>
+        <p>{this.state.totals.distance} Km</p>
+        <p>displacement</p>
+      </div>
     </div>
   }
 
