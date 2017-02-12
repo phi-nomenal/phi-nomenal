@@ -46,6 +46,30 @@
   }
 }
 
+#tracker-totals {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 1024px;
+  top: 500px;
+}
+
+.tracker-total {
+  text-align: center;
+  color: white;
+  font-size: 20pt;
+  width: 512px;
+  line-height: 50%;
+}
+
+#tracker-total-co2 {
+  left: 0px;
+}
+
+#tracker-total-distance {
+  left: 512px;
+}
+
 #tracker-ui thead td {
     border-bottom: 1px solid #333;
 }
