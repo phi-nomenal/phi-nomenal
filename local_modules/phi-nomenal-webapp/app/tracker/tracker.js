@@ -58,11 +58,11 @@ class Tracker extends React.Component {
       <table id='tracker-totals'>
         <tr>
           <td id='tracker-total-co2' className='tracker-total'>
-            <p>{this.state.totals.co2emission}</p>
+            <p className='value'>{this.state.totals.co2emission}</p>
             <p>CO₂ emission</p>
           </td>
           <td id='tracker-total-distance' className='tracker-total'>
-            <p>{this.state.totals.distance} km</p>
+            <p className='value'>{this.state.totals.distance} km</p>
             <p>displacement</p>
           </td>
         </tr>

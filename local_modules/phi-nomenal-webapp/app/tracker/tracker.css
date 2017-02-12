@@ -61,7 +61,12 @@
   color: white;
   font-size: 20pt;
   width: 512px;
-  line-height: 50%;
+
+  p { margin-bottom: 0; margin-top: 0; }
+  .value {
+      font-size: 150%;
+      text-transform: uppercase;
+  }
 }
 
 #tracker-total-co2 {
