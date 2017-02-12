@@ -41,17 +41,9 @@ class Tracker extends React.Component {
   }
 
   renderTrackingInfo () {
-    return <div id='tracker-ui' className='results'><table>
-      <thead>
-        <tr><td>Description</td><td>Transportation</td><td className='numeric'>CO<sub>2</sub> Emission</td></tr>
-      </thead>
-      <tbody>
-        { this.state.legs.map(this.renderLeg) }
-        <tr><td /><td /><td className='totals numeric'><strong>{
-          this.state.legs.reduce(function (emission, leg) { return emission + leg.co2emission }, 0)
-        }</strong></td></tr>
-      </tbody>
-    </table></div>
+    return <div id='tracker-ui' className='results'>
+      { this.state.legs.map(this.renderLeg) }
+    </div>
   }
 
   renderLeg (leg) {
