@@ -17,7 +17,7 @@ const Location = contract(LocationJSON)
 const OrderHistoryLeg = contract(OrderHistoryLegJSON)
 const OrderHistory = contract(OrderHistoryJSON)
 
-const web3Location = 'http://localhost:8545'
+const web3Location = '/eth'
 var web3Provided
 // Supports Metamask and Mist, and other wallets that provide 'web3'.
 if (typeof web3 !== 'undefined') {
