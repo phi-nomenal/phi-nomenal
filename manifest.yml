@@ -1,0 +1,5 @@
+---
+applications:
+- name: PHi-Nomenal
+  buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+  command: ./.start.sh

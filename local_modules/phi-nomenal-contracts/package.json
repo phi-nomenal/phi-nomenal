@@ -15,12 +15,15 @@
     "Kristian Esser"
   ],
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "ethereumjs-testrpc": "^3.0.3",
     "truffle": "^3.1.1"
   },
   "scripts": {
     "install": "truffle compile",
     "test": "truffle test"
-  }
+  },
+  "engines": {
+    "node": "7.5.x"
+  } 
 }
