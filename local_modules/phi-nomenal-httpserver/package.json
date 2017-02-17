@@ -1,0 +1,28 @@
+{
+  "name": "phi-nomenal-httpserver",
+  "version": "0.1.0",
+  "description": "Phi-Nomenal HTTP Server",
+  "main": "index.js",
+  "repository": "https://github.com/phi-nomenal/phi-nomenal",
+  "contributors": [
+    "Stefan van den Oord",
+    "Mark Spanbroek",
+    "Jasper Zachariasse",
+    "Danielle van der Veeken",
+    "Jeroen Grift",
+    "David Bots",
+    "Neil van Zyl",
+    "Kristian Esser"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "http-proxy": "^1.16.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "7.5.x"
+  }
+}

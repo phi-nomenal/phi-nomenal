@@ -26,7 +26,7 @@
     "eslint-plugin-standard": "^2.0.1"
   },
   "scripts": {
-    "postinstall": "local_modules install -f && (cd local_modules/phi-nomenal-contracts && yarn install) && ( cd local_modules/phi-nomenal-webapp && yarn install && ./node_modules/.bin/webpack )",
+    "postinstall": "local_modules install -f && (cd local_modules/phi-nomenal-contracts && yarn install) && ( cd local_modules/phi-nomenal-webapp && yarn install && ./node_modules/.bin/webpack ) && ( cd local_modules/phi-nomenal-httpserver && yarn install )",
     "devsetup": "yarn install && local_modules link -f && cd local_modules/phi-nomenal-contracts && yarn install",
     "test": "eslint . && ( cd local_modules/phi-nomenal-contracts && yarn test ) && ( cd local_modules/phi-nomenal-webapp && yarn test )",
     "start": "./.start.sh"
